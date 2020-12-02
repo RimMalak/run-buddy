@@ -260,6 +260,19 @@ footer a {
    clear: white;
 }
 
+.contact-info h3 {
+    font-size: 30px;
+    color: #fce138;
+    padding: 0 0 20px 50px;}
 
+.contact-info  p, address {
+    color: white;
+    line-height: 1.5;
+    padding: 0 0 20px 50px;
+    font-style: normal;
+}
 
+.contact-info a {
+    color: #fce138;
+}
 
