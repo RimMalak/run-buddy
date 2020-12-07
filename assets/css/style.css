@@ -8,7 +8,7 @@ body {
     color: #39a6b2;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/*Flexbox*/
 header {
     padding: 25px 35px;
     background-color: #39a6b2;
@@ -32,16 +32,21 @@ header a {
 
 header nav {
     margin: 7px 0;
-}
 
-header nav ul li {
-    display: inline;
 }
-
+/*Flexbox*/
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+/*Flexbox*/
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
 }
 
 footer {
