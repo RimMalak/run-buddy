@@ -44,7 +44,7 @@ header nav ul {
 }
 /*Flexbox*/
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
 }
@@ -81,6 +81,7 @@ footer a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .hero-cta {
@@ -89,7 +90,7 @@ footer a {
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .hero-cta h2 {
@@ -155,7 +156,7 @@ footer a {
 }
 
 .section-title {
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     border-bottom: 3px solid ;
     padding: 20px;
@@ -332,4 +333,28 @@ footer a {
     padding: 15px 0;
     font-size: 16px;
 }
+
+/* Media Query for smaller desktop screens and smaller*/
+@media screen and (max-width: 980px) {
+
+}
+
+/* Media Query for tablets and smaller*/
+@media screen and (max-width: 768px) {
+
+}
+
+/*Media Query for mobile and smaller*/
+@media screen and (max-width: 575px) {
+
+}
+
+
+
+
+
+
+
+
+
 
