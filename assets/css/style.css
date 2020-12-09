@@ -453,6 +453,30 @@ footer a {
     .step-text {
         flex: 100%;
     }
+    /* RESP GRID*/
+    .service-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-grid-item.both {
+        grid-column: 1 / span 2;
+    }
+
+    .service-grid-item.basic {
+        grid-column: 1 / span 1;
+    }
+      
+    .service-grid-item.service-grid-item.premium {
+        grid-column: 2 / span 1;
+    }
+    
+    .service-grid-item.cancel {
+        grid-column: 1 / -1;
+        grid-row: -1 ;
+        writing-mode: unset;
+        transform: none;
+        align-items: center;
+    }
 }
 
 /*Media Query for mobile and smaller*/
