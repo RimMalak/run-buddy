@@ -334,6 +334,19 @@ footer a {
     font-size: 16px;
 }
 
+/* Grid */
+.service-grid-container {
+    display: grid;
+}
+
+.service-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+}
+
 /* Media Query for smaller desktop screens and smaller*/
 @media screen and (max-width: 980px) {
     header  {
@@ -377,8 +390,6 @@ footer a {
     }
 }
 
-
-
 /* Media Query for tablets and smaller*/
 @media screen and (max-width: 768px) {
 
@@ -402,7 +413,6 @@ footer a {
         flex: 100%;
     }
 }
-
 
 /*Media Query for mobile and smaller*/
 @media screen and (max-width: 575px) {
