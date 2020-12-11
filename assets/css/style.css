@@ -16,6 +16,13 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
@@ -23,6 +30,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;  
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -47,6 +55,14 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 /* flexbox*/
 footer {
@@ -82,6 +98,8 @@ footer a {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 .hero-cta {
@@ -97,17 +115,20 @@ footer a {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form {
-    background-color: #fce138;
+    background-color: rgb(252,225,56,0.8);
     padding: 20px;  
     color: #024e76;
     border-style: solid;
     border-width: 3px;
     border-color: #024e76;
     width: 40%;
-    margin: 3.5%;   
+    margin: 3.5%; 
+    box-shadow: 5px 5px 10px rgb( 0, 0, 0, 0.5);
+    border-radius: 20px;
 }
 
 .hero-form h3 {
@@ -127,6 +148,13 @@ footer a {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input:focus {
+    background-color: rgba(255,255,255, 1) ;
+    outline: none;
 }
 
 .hero-form label {
@@ -139,6 +167,11 @@ footer a {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
+    border-radius: 15px;
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;
 }
 
 .intro p {
@@ -147,6 +180,7 @@ footer a {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -177,11 +211,14 @@ footer a {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
 }
 
 .step h3 {
@@ -322,7 +359,14 @@ footer a {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
 }
+
+.contact-form input:focus , .contact-form textarea:focus{
+    background-color:rgba(255,255,255,1) ;
+    outline: none;
+} 
 
 .contact-form button {
     width: 100%;
@@ -332,6 +376,12 @@ footer a {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 15px;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
 }
 
 /* Services Styles Begin */
@@ -343,11 +393,7 @@ footer a {
     display: flex;
     width: 100%;
     justify-content: center;
-}
-
-.grid-head, .grid-price, .service-grid-item.cancel {
-    font-size: 1.5rem;
-    font-weight: bold;
+    padding: 30px;
 }
 
 .service-grid-container {
@@ -366,6 +412,11 @@ footer a {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.grid-head, .grid-price, .service-grid-item.cancel {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .service-grid-item.basic {
@@ -393,6 +444,7 @@ footer a {
     header  {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
     header h1 {
         width: 100%;
